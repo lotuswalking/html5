@@ -1,18 +1,21 @@
-#gameCanvas
-{
-    height:600px;
-    width: 800px;
-    /* padding:10px; */
-    background:#c6c6c6
-}
 
 body{
-    margin: 0;
-    height: 100vh;
+    margin: 3;
+    width: 90%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #48c0d8;
+    /* background-image: url('/img/bg.png'); */
+    
+    border-color: hsl(300, 100%, 50%);
+    border-width: 3;
+    
+}
+canvas
+{
+    
 }
 .black-bomb{
 width: 13em;
@@ -20,7 +23,14 @@ height: 13em;
 font-size: 16px;
 position: relative;
 margin-top: 3em;
+/* -webkit-animation: myfirst 3s linear infinite; Safari 与 Chrome */
 }
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+    0% {left: 0px;transform:rotate(0deg);}
+    50% {left:400px;transform:rotate(360deg);}
+    100% { left: 0px;transform:rotate(0deg);}
+} 
 .black-bomb *::before,
 .black-bomb *::after {
     content: '';
@@ -81,13 +91,13 @@ margin-top: 3em;
     background: #000000;
 }
 .eyebrows::before {
-    top:2.3em;
-    left:1em;
+    top:1.7em;
+    left:0.5em;
     transform: rotate(10deg);
 }
 .eyebrows::after {
-    top: 2.3em;
-    right: -1em;
+    top: 1.5em;
+    right: 0.2em;
     transform: rotate(-10deg);
 }
 .mouth {
@@ -96,8 +106,8 @@ margin-top: 3em;
     height: 3.6em;
     /* background-color: #fca90d; */
     background-color: #f0c018;
-    top: 5em;
-    left: 6.4em;
+    top: 5.5em;
+    left: 5em;
     border-radius: 80% 0 30% 20%;
     transform: rotate(34deg);
     border: 0.1em solid black;
