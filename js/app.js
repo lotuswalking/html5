@@ -56,7 +56,7 @@ var playerBullets = [];
 function shoot(x, y, z) {
   if (time % 20 == 0) {
     var bullet = {};
-    bullet.img = addImg("bullet/bullet (5).png");
+    bullet.img = addImg("./bullet/bullet (5).png");
     bullet.x = flyX * getPiselRatio();
     bullet.y = flyY * getPiselRatio();
     bullet.vx = 0;
@@ -122,7 +122,7 @@ function drawFly() {
   // console.log(flyX, flyY);
   // console.log(context.width,context.height);
   context.fillStyle = "white";
-  flying = addImg("img/fly.png");
+  flying = addImg("./img/fly.png");
   flyingPigX = 0.5 * cw - 0.5 * flyingPigWidth[fpn - 1];
 
   // context.drawImage(flying, 0, 0, 10, 10  );
