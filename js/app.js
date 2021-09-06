@@ -1,4 +1,4 @@
-var contest;
+var context;
 var flyX, flyY;
 var vw, wh;
 var bg;
