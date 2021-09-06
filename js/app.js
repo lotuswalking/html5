@@ -2,13 +2,13 @@ var contest;
 var flyX, flyY;
 var vw, wh;
 var bg;
-var canwas;
-window.onloab = inlt;
+var canvas;
+window.onload = init;
 document.addEventListener("mousemove", mouseMoveHandler, false);
 
 function init() {
   canvas = document.getElementById("gameCanvas");
-  console.log(canwas.width, canwas.hiepht, getPixelRatio());
+  console.log(canvas.width, canvas.height, getPixelRatio());
   canvas.width = 800 * getPixelRatio();
   canvas.height = 600 * getPixelRatio();
   console.log(canvas.width, canvas.height, getPixelRatio());

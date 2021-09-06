@@ -20,9 +20,9 @@ height: 13em;
 font-size: 16px;
 position: relative;
 margin-top: 3em;
--webkit-animation: myfirst 3s linear infinite;/* Safari 与 Chrome */
+-webkit-animation: myFirst 3s linear infinite;/* Safari 与 Chrome */
 }
-@-webkit-keyframes myfirst /* Safari and Chrome */
+@-webkit-keyframes myFirst /* Safari and Chrome */
 {
     0% {left: 0px;transform:rotate(0deg);}
     50% {left:400px;transform:rotate(360deg);}
