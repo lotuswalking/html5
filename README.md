@@ -1,6 +1,6 @@
 # html5
 
-[直接测试] (https://lotuswalking.github.io/html5/)
+[直接测试](https://lotuswalking.github.io/html5/)
 
 该文档使用css功能画出了一只愤怒的小鸟
 
